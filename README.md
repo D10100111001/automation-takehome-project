@@ -2,6 +2,21 @@
 
 Project for candidates to complete as a hiring assessment.
 
+
+## Getting Started
+
+1. `yarn install`
+2. `yarn build`
+2. `yarn start <marketplace> [query]` - e.g. `yarn start amazon 'laptop'` or `yarn start ebay 'laptop'`
+
+### Optional Env Vars
+APP_MAX_RETRY_ATTEMPT - Amount of times to retry scraping in case of failure. Default: `3`
+APP_PRODUCT_CSV_PATH - CSV Path of scraped product data. Default: `./out/products.csv`
+APP_BROWSER_HEADLESS - Whether to run the browser in headless mode. Default: `true`
+APP_BROWSER_LAUNCH_TIMEOUT_MS - Playwright browser launch timeout value in milliseconds. Default: `30000`
+APP_PAGE_DEFAULT_TIMEOUT_MS - Playwright page default timeout value in milliseconds. Default: `30000`
+APP_PAGE_NAVIGATION_TIMEOUT_MS - Playwright page navigation timeout value in milliseconds. Default: `30000`
+
 ## Instructions
 
 1. Fork repo to your own project.
